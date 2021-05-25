@@ -1,0 +1,170 @@
+*{box-sizing: border-box;}
+
+
+body {
+ margin: 0;
+ font-family: Arial, Helvetica, sans-serif;
+ background-image: url("фото2.jpg");
+}
+
+
+.topnav {
+overflow: hidden;
+background-color: SaddleBrown;
+
+}
+
+	
+.topnav a {
+	float: left;
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 16px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	position: relative;
+}
+
+
+.topnav a:hover {
+	background-color: #FEFF7C;
+	color: black;
+}
+
+
+.topnav a.active {
+	background-color: #2196F3
+	color: white;
+}
+
+
+.cbutton {
+	float: right;
+}
+
+
+.topnav input[type=text] {
+	padding: 6px;
+	margin-top: 8px;
+	font-size: 17px;
+	border: none;
+}
+
+
+.cbutton button {
+	float: right;
+	padding: 1px;
+	margin-top: 0px;
+	margin-right: 16px;
+	background: SaddleBrown;
+	font-size: 17px;
+	border: none;
+	cursor: pointer;
+}
+
+
+@media screen and (max-width: 600px) {
+   .topnav .cbutton {
+	float: none;
+}
+
+.topnav a, .topnav input[type=text], .topnav.cbutton button {
+	float: none;
+	display: block;
+	text-align: left;
+	width: 100%;
+	margin: 0;
+	padding: 1px;
+}
+
+.topnav input[type=text] {
+	border: 1px solid #ccc;
+}
+}
+
+.foto {
+text-align: center; 
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.zagolovok {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+table, th {
+  border: 1px solid black;
+}
+
+table.center {
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
+.menu {
+    background-color: SaddleBrown;
+	float: left;
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 16px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	position: relative;
+}
+.dropdown {
+    display: inline-block;
+	background: SaddleBrown;
+	border: none;
+	cursor: pointer;
+    float: right;
+	padding: 1px;
+	margin-top: 0px;
+	margin-right: 16px;
+	font-size: 17px;
+}
+.dropdown-child {
+    display: none;
+    background-color: black;
+    min-width: 200px;
+}
+.dropdown-child a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+
+.grid_12 { width:940px; }
+
+.column {
+	margin: 0 10px;
+	overflow: hidden;
+	float: left;
+	display: inline;
+}
+.row {
+	width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.row .row {
+	margin: 0 -10px;
+	width: auto;
+	display: inline-block;
+}
+
+.otstup {
+	margin: 0px 25px 0px 30px;;
+}
